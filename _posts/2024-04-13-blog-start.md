@@ -17,14 +17,15 @@ tags:
 ## 3.1 创建repo
 建repo，建html，测试可访问 ，done;以下3步：<br>
 ① 建repo：创建1个和自己github 的user_name一致的repo。 <br>
-![Alt text](image.png) <br>
+![Alt text](./image.png) <br>
 ② 建html：创建index.html; <br> 
+**注意看下自己repo默认的repo**
 ```
-$ cd tobiasalin.github.io
+$ cd {Owner}.github.io
 $ echo "Hello World!" > index.html
 $ git add index.html
 $ git commit -m "Init commit"
-$ git push origin master
+$ git push origin main
 ```
 ③ 访问test：访问域名；<br>
 https://{Ower}.github.io/
