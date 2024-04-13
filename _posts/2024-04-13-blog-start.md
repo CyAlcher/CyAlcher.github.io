@@ -1,23 +1,26 @@
 ---
 layout:       post
-title:        "github blog start"
-author:       "CQ"
+title:        "git.io 搭建"
+author:       "cyalcher"
 header-style: text
 catalog:      true
 tags:
     - git blog
+    - git pages
 ---
 # 结论
 建repo，加样式，本地测试，写文档。
 # 一、背景
-简述：一直想记录下自己的学习记录，2024.04开始了。
+一直想记录下自己的学习记录，2024.04开始了。<br>
+开发本：macos 13.5.1。<br>
+
 # 二、目标
 完成个人的blog可访问；
 # 三、实施过程
 ## 3.1 创建repo
 建repo，建html，测试可访问 ，done;以下3步：<br>
 ① 建repo：创建1个和自己github 的user_name一致的repo。 <br>
-![Alt text](./image.png) <br>
+![create repo](./img/in-post/0413_blog_start.png) <br>
 ② 建html：创建index.html; <br> 
 **注意看下自己repo默认的repo**
 ```
