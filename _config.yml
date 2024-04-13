@@ -1,5 +1,5 @@
 # Site settings
-title: CQ Blog
+title: cyalcher Blog
 SEOTitle: CQ博客 | CQ Blog
 header-img: img/home-bg.jpg
 email: caiqiang1993@gmail.com
@@ -13,10 +13,10 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username: huxpro
-zhihu_username: huxpro
-github_username: huxpro
-twitter_username: huxpro
+#weibo_username: CQ
+#zhihu_username: cyalcher
+github_username: cyalcher
+#twitter_username: huxpro
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -59,7 +59,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: hux
+disqus_username: cq
 
 # Netease settings
 netease_comment: false
@@ -89,14 +89,14 @@ service-worker: true
 page-mathjax: false
 
 # Friends
-friends:
-  [
-    { title: "乱序（Midare）", href: "http://mida.re/" },
-    { title: "Ebn Zhang", href: "https://ebnbin.dev/" },
-    { title: "Kun Qian", href: "http://kunq.me" },
-    { title: "Sherry Woo", href: "https://sherrywoo.me/" },
-    { title: "SmdCn", href: "http://blog.smdcn.net" },
-    { title: "JiyinYiyong", href: "http://tiye.me/" },
-    { title: "DHong Say", href: "http://dhong.co" },
-    { title: "尹峰以为", href: "http://ingf.github.io/" },
-  ]
+# friends:
+#   [
+#     { title: "乱序（Midare）", href: "http://mida.re/" },
+#     { title: "Ebn Zhang", href: "https://ebnbin.dev/" },
+#     { title: "Kun Qian", href: "http://kunq.me" },
+#     { title: "Sherry Woo", href: "https://sherrywoo.me/" },
+#     { title: "SmdCn", href: "http://blog.smdcn.net" },
+#     { title: "JiyinYiyong", href: "http://tiye.me/" },
+#     { title: "DHong Say", href: "http://dhong.co" },
+#     { title: "尹峰以为", href: "http://ingf.github.io/" },
+#   ]
