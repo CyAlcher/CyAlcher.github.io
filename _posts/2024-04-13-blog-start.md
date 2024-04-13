@@ -47,7 +47,8 @@ $ git remote add mine https://github.com/{owner}/{owner}.github.io
 ## 3.5 坑简记
 1. 注意添加repo 是在 主题repo中添加自己得repo; <br>
 2. 本地快速预览验证使用 Ruby，install的时候坑比较多，根据报错不断修改版本；<br>
-
+3. 当出现如下，http://127.0.0.1:4000/ 即代表本地校验成功了
+![Alt text](image.png)
 
 
 # 参考
