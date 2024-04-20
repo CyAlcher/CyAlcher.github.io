@@ -14,7 +14,8 @@ tags:
 
 # 二、目标
 掌握optuna的应用，实现参数调优。
-# 三、官网demo2-添加实验注解
+# 三、官网demo
+## 添加实验注解
 注解的作用：实验的标签，标注当前的实验；
 实现两个功能：① 通过 study 对象的 set_user_attr 方法设定注解 ② 在1次实验中添加注解案例;
 其中：set_user_attr 参数是(string,任意json对象)；
@@ -68,5 +69,22 @@ study.optimize(objective,n_trials=1)
 study.trials[0].user_attrs
 # 结果： {'accuray': 0.9266666666666667, 'contributor': 'cyalcher'}
 ```
+## 命令行页面
+背景：在完整的案例中需要 定义 objective 函数及create_study等样板代码。 <br>
+**通过命令行页面，省略样板代码，可完成自动化执行；** <br>
+1. 开发foo.py 文件，只有objective函数；<br>
+```
+def objective(trial):
+    x = trial.suggest_float("x", -10, 10)
+    return (x - 2) ** 2
+```
+2. 开发bash文件内容如下，
+```
+echo '---- optuna test  ---- '
+STUDY_NAME=`optuna create-study --storage cli.db`
+optuna study optimize 0420_optuna_cli_foo.py --n-trials=1 --storage cli.db --study-name $STUDY_NAME  objective
+```
+
 # 参考
-[用RDB后端保存/恢复Study](https://optuna.readthedocs.io/zh-cn/latest/tutorial/20_recipes/001_rdb.html#sphx-glr-tutorial-20-recipes-001-rdb-py)
+[用户定义属性](https://optuna.readthedocs.io/zh-cn/latest/tutorial/20_recipes/003_attributes.html)
+[命令行页面](https://optuna.readthedocs.io/zh-cn/latest/tutorial/20_recipes/004_cli.html)
